@@ -13,6 +13,9 @@ import Menu from './src/screens/menu';
 //aboutus
 import Aboutus from './src/screens/aboutus';
 
+//cart
+import Cart from './src/screens/cart';
+
 export default function App() {
 
   const Stack = createNativeStackNavigator();
@@ -32,6 +35,15 @@ export default function App() {
         />
         <Stack.Screen name='Sobre nós'
           component={Aboutus}
+          options={{
+            headerTintColor: '#fff',
+            headerStyle: {
+              backgroundColor: '#006341'
+            }
+          }}
+        />
+        <Stack.Screen name='Carrinho'
+          component={Cart}
           options={{
             headerTintColor: '#fff',
             headerStyle: {
