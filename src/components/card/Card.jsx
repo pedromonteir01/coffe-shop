@@ -10,7 +10,7 @@ const Card = ({name, image, price}) => {
                 <Text>{price}</Text>
             </View>
             <TouchableOpacity className="bg-GreenS p-2 rounded m-1">
-                <Text className="text-white">Comprar</Text>
+                <Text className="text-white">ADICIONAR</Text>
             </TouchableOpacity>
         </View>
     );

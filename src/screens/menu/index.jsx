@@ -53,7 +53,7 @@ export default function Menu() {
                     <ScrollView horizontal>
                         {
                             drinks.map((drink) => (
-                                <Card name={drink.name} image={drink.image} price={drink.price} />
+                                <Card name={drink.name} image={drink.image} price={drink.price} key={drink.name + 'key'}/>
                             ))
                         }
                     </ScrollView>
@@ -63,7 +63,7 @@ export default function Menu() {
                     <ScrollView horizontal>
                         {
                             foods.map((food) => (
-                                <Card name={food.name} image={food.image} price={food.price} />
+                                <Card name={food.name} image={food.image} price={food.price} key={food.name + 'key'}/>
                             ))
                         }
                     </ScrollView>
