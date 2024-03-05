@@ -9,6 +9,7 @@ export default function Home() {
             <Text className="font-bold text-white text-3xl m-4">STARBUCKS©</Text>
             <View className="flex items-center justify-center w-full">
                 <ButtonNav text={'CARDÁPIO'} route={'Menu'}/>
+                <ButtonNav text={'SOBRE NÓS'} route={'Sobre nós'}/>
             </View>
             <Text className="text-white font-thin m-4">Todos os direitos reservados©</Text>
             <StatusBar style="auto"/>

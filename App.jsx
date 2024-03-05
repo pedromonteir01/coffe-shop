@@ -10,6 +10,9 @@ import Home from './src/screens/home';
 //menu
 import Menu from './src/screens/menu';
 
+//aboutus
+import Aboutus from './src/screens/aboutus';
+
 export default function App() {
 
   const Stack = createNativeStackNavigator();
@@ -17,18 +20,27 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name='Home' component={Home} options={{headerShown: false}}/>
-        <Stack.Screen name='Menu' 
-          component={Menu} 
+        <Stack.Screen name='Home' component={Home} options={{ headerShown: false }} />
+        <Stack.Screen name='Menu'
+          component={Menu}
           options={{
             headerTintColor: '#fff',
             headerStyle: {
               backgroundColor: '#006341'
             }
           }}
-          />
+        />
+        <Stack.Screen name='Sobre nós'
+          component={Aboutus}
+          options={{
+            headerTintColor: '#fff',
+            headerStyle: {
+              backgroundColor: '#006341'
+            }
+          }}
+        />
       </Stack.Navigator>
-      <StatusBar style='auto'/>
+      <StatusBar style='auto' />
     </NavigationContainer>
   );
 }

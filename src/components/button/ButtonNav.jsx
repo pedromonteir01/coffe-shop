@@ -8,7 +8,7 @@ const ButtonNav = ({text, route}) => {
     return(
         <TouchableOpacity
             onPress={() => navigation.navigate(route)}
-            className="bg-white rounded-xl p-4 w-6/12 items-center"
+            className="bg-white rounded-xl p-4 w-6/12 items-center mb-4"
         >
             <Text className="text-GreenS font-bold text-lg">{text}</Text>
         </TouchableOpacity>
